@@ -71,11 +71,11 @@ namespace Platformer
         private const float AirDragFactor = 0.58f;
 
         // Constants for controlling vertical movement
-        private const float MaxJumpTime = 0.35f;
-        private const float JumpLaunchVelocity = -3500.0f;
-        private const float GravityAcceleration = 3400.0f;
-        private const float MaxFallSpeed = 550.0f;
-        private const float JumpControlPower = 0.14f; 
+        private const float MaxJumpTime = 0.35f;            // original 0.35f
+        private const float JumpLaunchVelocity = -3500.0f;  // original -3500
+        private const float GravityAcceleration = 3400.0f;  // original 3400
+        private const float MaxFallSpeed = 550.0f;          // original 550
+        private const float JumpControlPower = 0.14f;       // original 0.14
 
         // Input configuration
         private const float MoveStickScale = 1.0f;
