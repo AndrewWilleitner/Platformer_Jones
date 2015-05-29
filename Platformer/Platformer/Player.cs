@@ -235,13 +235,31 @@ namespace Platformer
                 keyboardState.IsKeyDown(Keys.Left) ||
                 keyboardState.IsKeyDown(Keys.A))
             {
-                movement = -1.0f;
+                // Press r to run.
+                if (gamePadState.IsButtonDown(Buttons.RightShoulder) ||
+                keyboardState.IsKeyDown(Keys.R))
+                {
+                    movement = -1.6f;
+                }
+                else
+                {
+                    movement = -1.0f;
+                }
             }
             else if (gamePadState.IsButtonDown(Buttons.DPadRight) ||
                      keyboardState.IsKeyDown(Keys.Right) ||
                      keyboardState.IsKeyDown(Keys.D))
             {
-                movement = 1.0f;
+                // Press r to run.
+                if (gamePadState.IsButtonDown(Buttons.RightShoulder) ||
+                keyboardState.IsKeyDown(Keys.R))
+                {
+                    movement = 1.6f;
+                }
+                else
+                {
+                    movement = 1.0f;
+                }
             }
 
             // Check if the player wants to jump.
